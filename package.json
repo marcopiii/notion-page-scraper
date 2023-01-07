@@ -1,0 +1,34 @@
+{
+  "name": "notion-page-scraper",
+  "description": "An utility to extract nested data from a Notion page",
+  "version": "0.1.0",
+  "author": {
+    "name": "marcopiii",
+    "url": "https://github.com/marcopiii"
+  },
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "notion"
+  ],
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "fix": "gts fix",
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "gts": "^3.1.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "fp-ts": "^2.11.8",
+    "@notionhq/client": "^2.2.3",
+    "limiter": "^2.1.0"
+  }
+}
