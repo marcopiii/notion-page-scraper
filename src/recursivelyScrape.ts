@@ -1,17 +1,9 @@
 import {apply, array, option, task, taskEither, taskOption} from 'fp-ts';
 import {pipe} from 'fp-ts/function';
-import {
-  GetPageResponse,
-  ListBlockChildrenResponse,
-} from '@notionhq/client/build/src/api-endpoints';
 
 import * as notionClient from './notionClient';
 import {analyzePageContent} from './analyzePageContent';
-
-export type Page = {
-  pageInfo: GetPageResponse;
-  pageContent: ListBlockChildrenResponse;
-};
+import {Page} from './model';
 
 export function recursivelyScrape(mode: 'as-page' | 'as-block') {
   return <A>(f: (p: Page) => A) =>

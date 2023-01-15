@@ -1,6 +1,7 @@
-import {array} from 'fp-ts';
-import {fromNullable} from 'fp-ts/lib/Option';
-import {recursivelyScrape, Page} from './recursivelyScrape';
+import {Page} from './model';
+import {recursivelyScrape} from './recursivelyScrape';
+
+export {Page};
 
 /**
  * @param f a function to be applied on an object containing both the responses to
