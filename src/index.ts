@@ -15,5 +15,5 @@ export {Page};
  * **NOTE**: it doesn't access pages in databases
  */
 export function scrape<A>(f: (p: Page) => A) {
-  return (page_id: string) => recursivelyScrape('as-page')(f)(page_id)();
+  return (page_id: string) => recursivelyScrape('as-page')(f)(page_id);
 }
